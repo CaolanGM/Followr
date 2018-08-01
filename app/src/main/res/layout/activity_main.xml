@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/searcharea"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5893f4"
+        >
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person"
+            />
+        <RelativeLayout
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/profile"
+            android:layout_toLeftOf="@+id/settings"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/layout_curve"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/searchtxt"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/searchtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search for people"
+                android:textSize="11.5dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_settings"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/profilearea"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/searcharea"
+        >
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/caolanpic"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Caolan Melvin"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilearea"
+        android:background="#5893f4"
+        android:orientation="horizontal"
+        android:weightSum=".9">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#fff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="CHANNELS"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#afff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="STORE"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#afff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="EVENTS"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/channelsarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:background="#1000">
+
+        <LinearLayout
+            android:id="@+id/channelslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff0000">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/youtube"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="YouTube"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangmvidz"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3b5998">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_facebook"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Facebook"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="Caolan Melvin"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8a3ab9">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_insta"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Instagram"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangm"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff7500">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_soundcloud"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="SoundCloud"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangmbeatz"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffc00">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_snapchat"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Snapchat"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:text="\@caolangm96"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00aced">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_twitter"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Twitter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangm"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3b5998">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_facebook"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Facebook"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="Caolan Melvin"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8a3ab9">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_insta"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Instagram"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangm"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff7500">
+
+                <ImageView
+                    android:id="@+id/applogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_soundcloud"/>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="SoundCloud"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appname"
+                    android:layout_toRightOf="@+id/applogo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="\@caolangmbeatz"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>
