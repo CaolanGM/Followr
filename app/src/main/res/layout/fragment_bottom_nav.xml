@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/timetableButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/timetable"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="Timetable">
+
+                <ImageButton
+                    android:id="@+id/timetable"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
+                    android:clickable="false"
+                    android:contentDescription="timetable button"
+                    android:src="@drawable/ic_book"
+                    android:tag="TimetableIB" />
+
+
+                <TextView
+                    android:id="@+id/timetableTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:tag="TimetableTV"
+                    android:text="@string/timetable"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/finderButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/finder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="Finder">
+
+                <ImageButton
+                    android:id="@+id/finder"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
+                    android:clickable="false"
+                    android:contentDescription="@string/finderIcon"
+                    android:src="@drawable/ic_search"
+                    android:tag="FinderIB" />
+
+
+                <TextView
+                    android:id="@+id/finderTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:tag="FinderTV"
+                    android:text="@string/finder"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/more"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="Menu">
+
+                <ImageButton
+                    android:id="@+id/burger_menu"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|top"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
+                    android:clickable="false"
+                    android:contentDescription="@string/moreIcon"
+                    android:src="@drawable/ic_dots"
+                    android:tag="MenuIB" />
+
+                <TextView
+                    android:id="@+id/burger_menuTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:tag="MenuTV"
+                    android:text="@string/more"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

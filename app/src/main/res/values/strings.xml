@@ -1,3 +1,147 @@
 <resources>
-    <string name="app_name">Followr</string>
+    <string name="app_name">Trinity Live</string>
+    <string name="login_button">Log In</string>
+    <string name="enter_your_email">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="terms_and">By signing into this service, you agree to our</string>
+    <string name="tAndC">Terms and Conditions</string>
+    <string name="trinity_college_logo">Trinity College Logo</string>
+    <string name="clock_error">Error: Clock is not working</string>
+    <string name="timetable">Timetable</string>
+    <string name="library">Library</string>
+    <string name="finder">Finder</string>
+    <string name="finderIcon">Finder Icon</string>
+    <string name="more">More</string>
+    <string name="moreIcon">More Icon</string>
+    <string name="id_icon">ID Icon</string>
+    <string name="id_calendar">Calendar Icon</string>
+    <string name="call">Call</string>
+    <string name="cancel">Cancel</string>
+    <string name="id_picture">ID Picture</string>
+    <string name="_12_00">12:00</string>
+    <string name="cs3014">CS3014</string>
+    <string name="noTitle">Module name missing</string>
+    <string name="noCode">Module code missing</string>
+    <string name="today">Today</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="mondayFull">Monday</string>
+    <string name="tuesdayFull">Tuesday</string>
+    <string name="wednesdayFull">Wednesday</string>
+    <string name="thursdayFull">Thursday</string>
+    <string name="fridayFull">Fri</string>
+    <string name="checkouts">Checkouts</string>
+    <string name="fines">Fines</string>
+    <string name="holds">Holds</string>
+    <string name="directions">Directions</string>
+    <string name="mylocation">My Location</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="emergnotif">Emergency Notifications</string>
+    <string name="emergnotifmes">Emergency information from estates and facilities</string>
+    <string name="emerginfo">Emergency Info</string>
+    <string name="emerginfomes">College emergency contact information</string>
+    <string name="settings">Settings</string>
+    <string name="settingsmes">Your Trinity Assistant settings</string>
+    <string name="logout">Logout</string>
+    <string name="logoutmes">Sign out of Trinity Assistant</string>
+    <string name="recentSearches">Recent Searches</string>
+    <string name="search">Search for places and people</string>
+    <string name="searchbt">Search</string>
+    <string name="searchbd">Search for buildings on campus</string>
+    <string name="searchclose">Close search bar button</string>
+    <string name="noteTaken">Notes taken</string>
+    <string name="noteTaken2">Notes taken for this module</string>
+    <string name="phoneNUmber">Phone number </string>
+    <string name="website">Website </string>
+    <string name="email">Email Address </string>
+    <string name="submit">submit</string>
+    <string name="updateNote">Update Note</string>
+    <string name="addNote2">Add note to: </string>
+    <string name="barcode">Barcode </string>
+    <string name="qrcode">QR Code</string>
+    <string name="trinityLogo">Trinity Logo</string>
+    <string name="option">Choose an option</string>
+    <string name="bugs">Bugs</string>
+    <string name="other">Other</string>
+    <string name="newFeat">New Features</string>
+    <string name="featImprov">Feature Improvements</string>
+    <string name="offerFeedback">Offer some feedback on the app</string>
+
+    <string name="enterFeedback">Enter Feedback</string>
+    <string name="SendFeedback">Send Feedback</string>
+    <string name="FeedbackMes">Send feedback about the app</string>
+    <string name="Subjects">Subjects</string>
+    <string name="defaultRestore">Restore default settings</string>
+    <string name="deleteNotesPopTitle">Delete all Notes</string>
+    <string name="deleteNotesPopMessage">Are you sure you want to delete all of your notes?</string>
+    <string name="defaultPopTitle">Reset Default Colours</string>
+    <string name="defaultPopMessage">Are you sure you want to reset all of your modules to the default colour?</string>
+    <string name="enableBreaks">Enable Breaks</string>
+    <string name="enableBreaksMes">Show breaks on your timetable</string>
+    <string name="deleteNotes">Delete Notes</string>
+    <string name="deleteNotesMes">Delete all the notes from your timetable</string>
+    <string name="colourSetts">Colour Settings</string>
+    <string name="colourSettsMes">Change the colour of modules on your timetable</string>
+    <string name="enableNotifs">Enable Notifications</string>
+    <string name="timetableSetts">Timetable Settings</string>
+    <string name="timetableSettsMes">Enable breaks, Delete notes and Set custom colours</string>
+    <string name="trinity_services">TCD Services</string>
+    <string name="trinityServicesMes">Useful links to other TCD Services</string>
+    <string name="print">TCD Print</string>
+    <string name="printMes">Access your TCD printing account</string>
+    <string name="itServices">IT Services</string>
+    <string name="itServicesMes">Access the IT Services help page</string>
+    <string name="myCareer">myCareer</string>
+    <string name="myCareerMes">Access your TCD myCareer account</string>
+    <string name="tcard">TCard</string>
+    <string name="tcardMes">Access your TCard account</string>
+    <string name="su">Student Union</string>
+    <string name="suMes">Visit the Student Union website</string>
+    <string name="closeID">Close ID screen</string>
+    <string name="back">Back</string>
+
+
+    <string name="calculating">Calculating</string>
+
+    <string name="note">Note</string>
+    <string name="no_classes_today">No classes today</string>
+    <string name="enter_note">Enter Note</string>
+    <string name="add_note">Add Note</string>
+    <string name="you_re_offline_and_can_t_view_ntimetable_for_this_week">You\'re Offline and Can\'t View  Timetable for this week</string>
+    <string name="tumbleweed">tumbleweed</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="about">About</string>
+    <string name="accept">Accept</string>
+    <string name="location">Location</string>
+    <string name="permissions">Permissions</string>
+    <string name="summary">Summary</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="openBracket">[</string>
+
+    <string name="summaryTxt">This is the summary</string>
+    <string name="permissionsTxt">Automatic Permissions: \n-Internet\n-Network State
+    \n\nIn App Permissions: \n-Location\n-Call Phone</string>
+    <string name="locationTxt">Though Trinity Live does not store or use your location data,
+    this data is retrieved through the Google Maps API so there is a possibility that this data may be used
+    at some stage by Google.</string>
+
+    <string-array name="places">
+
+
+        <item>John Smith</item>
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="undergraduate">Undergraduate</string>
+    <string name="postgraduate">Postgraduate</string>
+    <string name="incorrect_credentials">Username or password was incorrect</string>
+    <string name="cant_connect_response">Cannot connect to server, response code:</string>
+    <string name="cant_connect">Cannot connect to server</string>
 </resources>

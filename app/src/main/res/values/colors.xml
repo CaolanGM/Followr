@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#1678E6 </color>
+    <color name="colorAccent">#85c4ff</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="light_gray">#e4e4e4</color>
+    <color name="dark_gray">#6d6c6c</color>
+    <color name="header_gray">#424242</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--<color name="blue">#0e73b9</color>-->
+    <color name="blue">#3d91ed</color>
+    <color name="transparent_blue">#440e73b9</color>
+
+
+    <color name="red">#ff6961</color>
+    <color name="ligth_red">#ffbdbd</color>
+    <color name="pink">#ffbdde</color>
+    <color name="purple">#d896ff</color>
+    <color name="deep_purple">#966fd6</color>
+    <color name="indigo">#95d1e8</color>
+    <color name="light_blue">#779ecb</color>
+    <color name="cyan">#bde4f3</color>
+    <color name="teal">#009687</color>
+    <color name="green">#a6d99a</color>
+    <color name="light_green">#e1f7d5</color>
+    <color name="lime">#CCDD1E</color>
+    <color name="yellow">#ffdebd</color>
+    <color name="amber">#ffb347</color>
+    <color name="orange">#eec5ad</color>
+    <color name="deep_orange">#eeac88</color>
+    <color name="brown">#836953</color>
+    <color name="blue_grey">#c9c9ff</color>
+    <color name="charcoal">#36454f</color>
+    <color name="silver">#cfcfc4</color>
+
+
 </resources>

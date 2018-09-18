@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yourEvents">
+
+    <RelativeLayout
+        android:id="@+id/profilearea"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/searcharea"
+        >
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/caolanpic"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Caolan Melvin"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilearea"
+        android:background="#5893f4"
+        android:orientation="horizontal"
+        android:weightSum=".9">
+
+        <TextView
+            android:id="@+id/channels"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#afff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="CHANNELS"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#afff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="STORE"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/events"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#fff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="EVENTS"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/channelsarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/channelslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="24"/>
+
+                    <TextView
+                        android:layout_below="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="May"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Late Night Dance Off"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:text="Watch Caolan show off all his famous dance moves in an event that has to be seen to be believed"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:text="Tickets"
+                    android:gravity="center"
+                    android:textColor="#5893f4"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="25"/>
+
+                    <TextView
+                        android:layout_below="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="May"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Late Night Dance Off"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:text="Watch Caolan show off all his famous dance moves in an event that has to be seen to be believed"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:text="Tickets"
+                    android:gravity="center"
+                    android:textColor="#5893f4"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="26"/>
+
+                    <TextView
+                        android:layout_below="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="May"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Late Night Dance Off"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:text="Watch Caolan show off all his famous dance moves in an event that has to be seen to be believed"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:text="Tickets"
+                    android:gravity="center"
+                    android:textColor="#5893f4"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="27"/>
+
+                    <TextView
+                        android:layout_below="@+id/num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:textColor="#5893f4"
+                        android:gravity="center_horizontal"
+                        android:text="May"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Late Night Dance Off"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:text="Watch Caolan show off all his famous dance moves in an event that has to be seen to be believed"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:text="Tickets"
+                    android:gravity="center"
+                    android:textColor="#5893f4"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
