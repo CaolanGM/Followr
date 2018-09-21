@@ -6,6 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEventListener;
+
+import static net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent.setEventListener;
 
 
 /**
@@ -15,6 +20,7 @@ public class ActionBar extends Fragment {
 
 
     private static ActionBar instance = null;
+    private EditText searchbar;
 
 
     @Override
@@ -24,6 +30,22 @@ public class ActionBar extends Fragment {
         super.onCreate(savedInstanceState);
 
         View fragView =  inflater.inflate(R.layout.fragment_action_bar, container, false);
+        searchbar =  fragView.findViewById(R.id.searchtxt);
+
+
+
+        setEventListener(
+                getActivity(),
+                new KeyboardVisibilityEventListener() {
+                    @Override
+                    public void onVisibilityChanged(boolean isOpen) {
+                        if (isOpen) {
+
+                        } else {
+                            searchbar.clearFocus();
+                        }
+                    }
+                });
 
         return fragView;
     }

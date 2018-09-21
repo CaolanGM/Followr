@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trinity Live</string>
+    <string name="app_name">Followr</string>
     <string name="login_button">Log In</string>
     <string name="enter_your_email">Username</string>
     <string name="password_hint">Password</string>

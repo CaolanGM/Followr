@@ -24,14 +24,14 @@
             android:layout_height="match_parent"
             android:baselineAligned="false"
             android:gravity="center_vertical"
-            android:weightSum="3"
+            android:weightSum="4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
 
             <LinearLayout
-                android:id="@+id/timetableButton"
+                android:id="@+id/homeButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -41,7 +41,7 @@
                 android:tag="Timetable">
 
                 <ImageButton
-                    android:id="@+id/timetable"
+                    android:id="@+id/home"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center_horizontal|center"
@@ -49,23 +49,15 @@
                     android:backgroundTint="@color/white"
                     android:clickable="false"
                     android:contentDescription="timetable button"
-                    android:src="@drawable/ic_book"
-                    android:tag="TimetableIB" />
+                    android:src="@drawable/ic_home"
+                    android:tag="yourChannelsIB" />
 
 
-                <TextView
-                    android:id="@+id/timetableTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:clickable="false"
-                    android:tag="TimetableTV"
-                    android:text="@string/timetable"
-                    android:textSize="10sp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/finderButton"
+                android:id="@+id/addButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -75,7 +67,7 @@
                 android:tag="Finder">
 
                 <ImageButton
-                    android:id="@+id/finder"
+                    android:id="@+id/add"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
@@ -83,20 +75,35 @@
                     android:backgroundTint="@color/white"
                     android:clickable="false"
                     android:contentDescription="@string/finderIcon"
-                    android:src="@drawable/ic_search"
-                    android:tag="FinderIB" />
+                    android:src="@drawable/ic_add"
+                    android:tag="yourChannelsIB" />
 
 
-                <TextView
-                    android:id="@+id/finderTv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/finder"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="Finder">
+
+                <ImageButton
+                    android:id="@+id/profile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:backgroundTint="@color/white"
                     android:clickable="false"
-                    android:duplicateParentState="true"
-                    android:tag="FinderTV"
-                    android:text="@string/finder"
-                    android:textSize="10sp" />
+                    android:contentDescription="@string/finderIcon"
+                    android:src="@drawable/ic_person2"
+                    android:tag="yourChannelsIB" />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -119,17 +126,8 @@
                     android:clickable="false"
                     android:contentDescription="@string/moreIcon"
                     android:src="@drawable/ic_dots"
-                    android:tag="MenuIB" />
+                    android:tag="yourChannelsIB" />
 
-                <TextView
-                    android:id="@+id/burger_menuTv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:clickable="false"
-                    android:tag="MenuTV"
-                    android:text="@string/more"
-                    android:textSize="10sp" />
             </LinearLayout>
 
         </LinearLayout>

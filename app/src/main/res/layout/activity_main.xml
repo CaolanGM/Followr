@@ -38,20 +38,20 @@
         </FrameLayout>
     </LinearLayout>
 
-    <!--<LinearLayout-->
-        <!--android:id="@+id/nav_linear_container"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:orientation="vertical">-->
+    <LinearLayout
+        android:id="@+id/nav_linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
 
-        <!--<fragment-->
-            <!--android:id="@+id/bottom_nav_bar"-->
-            <!--android:name="com.example.caolan.followr.BottomNav"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--tools:layout="@layout/fragment_bottom_nav" />-->
-    <!--</LinearLayout>-->
+        <fragment
+            android:id="@+id/bottom_nav_bar"
+            android:name="com.example.caolan.followr.BottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_bottom_nav" />
+    </LinearLayout>
 
 </RelativeLayout>

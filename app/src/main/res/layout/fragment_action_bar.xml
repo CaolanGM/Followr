@@ -32,6 +32,8 @@
             android:layout_marginBottom="5dp"
             android:layout_marginRight="7dp"
             android:background="@drawable/layout_curve"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             >
 
             <ImageView
@@ -50,7 +52,8 @@
                 android:hint="Search for people"
                 android:textSize="11.5dp"
                 android:layout_centerHorizontal="true"
-                android:focusable="false"
+                android:singleLine="true"
+                android:windowSoftInputMode="stateHidden"
                 />
 
 
